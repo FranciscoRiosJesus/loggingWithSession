@@ -2,20 +2,24 @@
 
 include('database.php');
 
-if(isset($_POST['logging'])) {
+if(isset($_POST['signup'])) {
   
+  $name = $_POST['name'];
+  $last_name = $_POST['lastname'];
   $email = $_POST['email'];
   $password = $_POST['password'];
   
-  $query = "SELECT email, pass FROM users WHERE email='$email' AND pass='$password'";
+  $query = "";
   $result = mysqli_query($connection, $query);
 
+  
   if ( $result->fetch_assoc() == NULL ) {
-    $_SESSION['message'] = 'incorrect email or password';
+    $_SESSION['message'] = 'error - user no created';
     $_SESSION['message_type'] = 'danger';
-
-    header("Location: logging.php");
+    header("Location: signup.php");
   } else {
+    $_SESSION['message'] = 'user created';
+    $_SESSION['message_type'] = 'success';
     header("Location: index.php");
   }
 }
