@@ -1,3 +1,5 @@
+<?php /* si no tiene una user_session, ir a sing in */ ?>
+
 <?php include("database.php"); ?>
 
 <?php include("header.php"); ?>

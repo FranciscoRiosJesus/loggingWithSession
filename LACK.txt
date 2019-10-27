@@ -1,0 +1,8 @@
+FALTA:
+
+* password en md5, cifrado
+
+* index es el controler de las vistas, si esta logeado, comprobar si es el root, si no es el root ve la vista sin modificar. 
+  si es root puede modificar los productos, agregar y eliminar.
+
+* 
