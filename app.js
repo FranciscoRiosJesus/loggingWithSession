@@ -7,6 +7,16 @@ $(document).ready(function() {
   fetchproducts();
   $('#product-result').hide();
 
+  //load img
+  let form = document.getElementById('product-form');
+  form.addEventListener('submit', function(event) {
+    console.log('submit img ');
+    event.preventDefault();
+    let peticion = new XMLHttpRequest();
+    peticion.open('post', 'img_save.php');
+    console.log(new FormData(form));
+    peticion.send(new FormData(form));
+  });
 
   // search key type event
   $('#search').keyup(function() {
@@ -36,6 +46,7 @@ $(document).ready(function() {
     }
   });
 
+  // add product
   $('#product-form').submit(e => {
     e.preventDefault();
     const postData = {
@@ -46,7 +57,6 @@ $(document).ready(function() {
       price: $('#price').val()
     };
     const url = edit === false ? 'product-add.php' : 'product-edit.php';
-    console.log(postData, url);
     $.post(url, postData, (response) => {
       console.log(response);
       $('#product-form').trigger('reset');
