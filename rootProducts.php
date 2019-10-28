@@ -23,16 +23,20 @@
           <div class="card">
             <div class="card-body">
               <!-- FORM TO ADD TASKS -->
-              <form id="task-form">
+              <form id="product-form">
                 <div class="form-group">
-                  <input type="text" id="name" placeholder="Task Name" class="form-control">
+                  <input type="text" id="product_name" placeholder="Product Name" class="form-control">
                 </div>
                 <div class="form-group">
-                  <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Task Description"></textarea>
+                  <input type="number" id="price" placeholder="Price" class="form-control" min="1" step="any"> 
                 </div>
-                <input type="hidden" id="taskId">
+                <div class="form-group">
+                  <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Product   Description"></textarea>
+                </div>
+                <input type="hidden" id="category"  name="category" value="1">
+                <input type="hidden" id="product_id">
                 <button type="submit" class="btn btn-primary btn-block text-center">
-                  Save Task
+                  Save Product
                 </button>
               </form>
             </div>

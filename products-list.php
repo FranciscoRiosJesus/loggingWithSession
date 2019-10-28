@@ -47,7 +47,7 @@
             return 'Unknown error'; // or trigger_error() or throw new 
     Exception();
     }
-    }
+  }
     
     
     function utf8ize($mixed) {

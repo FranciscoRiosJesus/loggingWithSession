@@ -42,7 +42,7 @@ $(document).ready(function() {
       product_name: $('#product_name').val(),
       description: $('#description').val(),
       product_id: $('#product_id').val(),
-      quantity: $('#quantity').val(),
+      category: $('#category').val(),
       price: $('#price').val()
     };
     const url = edit === false ? 'product-add.php' : 'product-edit.php';
@@ -50,7 +50,7 @@ $(document).ready(function() {
     $.post(url, postData, (response) => {
       console.log(response);
       $('#product-form').trigger('reset');
-      fetchproducts();
+      fetchproducts();  
     });
   });
 
@@ -60,9 +60,7 @@ $(document).ready(function() {
       url: 'products-list.php',
       type: 'GET',
       success: function(response) {
-        console.log(response);
         let products = JSON.parse(response);
-        console.log(products);
         let template = '';
         products.forEach(product => {
           template += `
