@@ -23,6 +23,8 @@ if(isset($_POST['signup'])) {
             $_SESSION['message_type'] = 'danger';
             header("Location: signup.php");
         } else {
+            $_SESSION['user'] = $name;
+
             $_SESSION['message'] = 'user created';
             $_SESSION['message_type'] = 'success';
             header("Location: index.php");

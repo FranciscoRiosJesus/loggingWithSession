@@ -16,6 +16,8 @@ if(isset($_POST['logging'])) {
 
     header("Location: logging.php");
   } else {
+    $_SESSION['user'] = $name;
+    
     header("Location: index.php");
   }
 }

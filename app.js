@@ -73,7 +73,7 @@ $(document).ready(function() {
                         ${product.product_name} 
                       </a>
                     </td>
-                    <td>${product.quantity}</td>
+                    <td>${product.category_id}</td>
                     <td>${product.description}</td>
                     <td>${product.price}</td>
                     <td>
