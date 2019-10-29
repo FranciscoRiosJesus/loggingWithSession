@@ -3,7 +3,6 @@ $(document).ready(function() {
   let edit = false;
 
   // Testing Jquery
-  console.log('jquery is working!');
   fetchproducts();
   $('#product-result').hide();
 
@@ -57,6 +56,7 @@ $(document).ready(function() {
       price: $('#price').val()
     };
     const url = edit === false ? 'product-add.php' : 'product-edit.php';
+    console.log(url);
     $.post(url, postData, (response) => {
       console.log(response);
       $('#product-form').trigger('reset');
@@ -108,6 +108,8 @@ $(document).ready(function() {
       $('#product_name').val(product.product_name);
       $('#description').val(product.description);
       $('#productproduct_id').val(product.product_id);
+      $('#price').val(product.price);
+      $('#category').val(product.category_id);
       edit = true;
     });
     e.preventDefault();

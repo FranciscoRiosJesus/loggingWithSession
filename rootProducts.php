@@ -66,7 +66,7 @@
 
     <!-- TABLE  -->
     <div class="col-md-7">
-      <div class="card my-4" id="task-result">
+      <div class="card my-4" id="product-result">
         <div class="card-body">
           <!-- SEARCH -->
           <ul id="container"></ul>
