@@ -18,10 +18,8 @@
       'product_id' => $row['product_id']
     );
   }
-  echo safe_json_encode($json);
-  $jsonstring = json_encode($json, JSON_FORCE_OBJECT);
+  $jsonstring = safe_json_encode($json, JSON_FORCE_OBJECT);
   echo $jsonstring;
-  print_r($jsonstring);
 
   function safe_json_encode($value){
     if (version_compare(PHP_VERSION, '5.4.0') >= 0) {

@@ -56,7 +56,7 @@ $(document).ready(function() {
       price: $('#price').val()
     };
     const url = edit === false ? 'product-add.php' : 'product-edit.php';
-    console.log(url);
+    console.log(postData);
     $.post(url, postData, (response) => {
       console.log(response);
       $('#product-form').trigger('reset');
@@ -70,6 +70,7 @@ $(document).ready(function() {
       url: 'products-list.php',
       type: 'GET',
       success: function(response) {
+        console.log(response);
         let products = JSON.parse(response);
         let template = '';
         products.forEach(product => {
@@ -107,7 +108,7 @@ $(document).ready(function() {
       const product = JSON.parse(response);
       $('#product_name').val(product.product_name);
       $('#description').val(product.description);
-      $('#productproduct_id').val(product.product_id);
+      $('#product_id').val(product.product_id);
       $('#price').val(product.price);
       $('#category').val(product.category_id);
       edit = true;
