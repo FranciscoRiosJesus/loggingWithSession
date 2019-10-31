@@ -84,7 +84,7 @@ $(document).ready(function() {
                     </td>
                     <td>${product.category_id}</td>
                     <td>${product.description}</td>
-                    <td>${product.price}</td>
+                    <td>$${product.price}</td>
                     <td>
                       <button class="product-delete btn btn-danger">
                         Delete 
