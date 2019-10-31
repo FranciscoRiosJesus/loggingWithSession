@@ -15,7 +15,8 @@
       'category_id' => $row['category_id'],
       'description' => $row['description'],
       'price' => $row['price'],
-      'product_id' => $row['product_id']
+      'product_id' => $row['product_id'],
+      'img_url' => $row['img_url']
     );
   }
   $jsonstring = safe_json_encode($json, JSON_FORCE_OBJECT);

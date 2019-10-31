@@ -81,7 +81,7 @@
             <td>Name</td>
             <td>Category</td>
             <td>Description</td>
-            <td>Price</td>
+            <td>Price</td>  
           </tr>
         </thead>
         <tbody id="products"></tbody>
