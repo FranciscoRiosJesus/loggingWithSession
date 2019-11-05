@@ -40,6 +40,9 @@
                 </div>
                 <input type="submit" class="fadeIn fourth btn btn-primary" value="Sign Up" name="signup">
             </form>
+            <div class="card-text">
+                <a href="logging.php" class="card-link stretched-link" style="position: relative;">Log In</a>
+            </div>
         </div>
     </div>
 </div>

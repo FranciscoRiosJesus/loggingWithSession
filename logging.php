@@ -24,7 +24,7 @@
         <?php session_unset(); } ?>
 
         <div class="card-body ">
-            <h2 class="card-title">Login</h2>
+            <h2 class="card-title">Log In</h2>
             <form action="loggingController.php" method="POST">
                 <div class="form-group">
                     <input type="email" id="login" class="fadeIn second form-control" name="email" placeholder="email" autofocus>
