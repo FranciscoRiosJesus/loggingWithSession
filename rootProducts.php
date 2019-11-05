@@ -23,8 +23,9 @@
     <div class="col-md-5">
       <div class="card">
         <div class="card-body">
+
           <!-- FORM TO ADD TASKS -->
-          <form id="product-form">
+          <form id="product-form" enctype="multipart/form-data">
             <div class="form-group">
               <input type="text" id="product_name" placeholder="Product Name" class="form-control" required>
             </div>
@@ -55,12 +56,10 @@
             <div class="form-group">
               <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Product Description"></textarea>
             </div>
-            <!-- <input type="hidden" id="category" name="category" value="1"> -->
             <input type="hidden" id="product_id">
-            <button type="submit" class="btn btn-primary btn-block text-center">
-              Save Product
-            </button>
+            <input type="submit" name="submit" class="btn btn-primary btn-block text-center" value="SAVE PRODUCT"/>
           </form>
+
         </div>
       </div>
     </div>
@@ -74,18 +73,20 @@
         </div>
       </div>
 
-      <table class="table table-bordered table-sm">
-        <thead>
-          <tr>
-            <td>Id</td>
-            <td>Name</td>
-            <td>Category</td>
-            <td>Description</td>
-            <td>Price</td>  
-          </tr>
-        </thead>
-        <tbody id="products"></tbody>
-      </table>
+      <div class="card">
+        <table class="table table-bordered table-sm">
+          <thead>
+            <tr>
+              <td>Id</td>
+              <td>Name</td>
+              <td>Category</td>
+              <td>Description</td>
+              <td>Price</td>
+            </tr>
+          </thead>
+          <tbody id="products"></tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
