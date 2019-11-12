@@ -1,4 +1,4 @@
-# FALTA:
+# FALTA - LACK:
 
 * password en md5, cifrado
 
