@@ -16,8 +16,8 @@
                     <button class="btn btn-success my-2 my-sm-0 search-btn" type="submit">Search</button>
                 </form>
             </li>
-            <li class="nav-item">
-                <a class="nav-link form-inline link" href="sign-out.php"><?php echo $_SESSION['user'] ?>  <button class="btn btn-success my-2 my-sm-0 search-btn" type="submit" style="text-decoration: underline #1a1a1a">Sign Out</button></a>
+            <li class="nav-item  itemSignOut">
+                <a class="nav-link form-inline link" href="sign-out.php"><?php echo $_SESSION['user'] ?>  <button class="btn-sign-out btn btn-success my-2 my-sm-0 search-btn" type="submit" style="text-decoration: underline #1a1a1a">Sign Out</button></a>
             </li>
         </ul>
     </div>

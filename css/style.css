@@ -41,3 +41,14 @@ body {
 .link {
     text-decoration: underline #1a1a1a !important;
 }
+
+.itemSignOut {
+    margin-right: 0px !important;
+}
+
+.itemSignOut .btn-sign-out {
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+    padding-bottom: 9px !important;
+    padding-top: 9px !important;
+}
