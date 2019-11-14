@@ -49,6 +49,27 @@ body {
 .itemSignOut .btn-sign-out {
     padding-left: 9px !important;
     padding-right: 9px !important;
-    padding-bottom: 9px !important;
-    padding-top: 9px !important;
+    padding-bottom: 8px !important;
+    padding-top: 8px !important;
+}
+
+.btn-info {
+    background: linear-gradient(to right, #3198a8, rgb(44, 103, 126), #2C5364);
+    border-color: linear-gradient(to right, #3198a8, rgb(44, 103, 126), #2C5364);
+    padding: 0 !important;
+}
+
+.btn-form {
+    width: 100% !important;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .row {
+        min-width: 1100px;
+    }
 }

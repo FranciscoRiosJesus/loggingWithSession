@@ -48,6 +48,11 @@ $(document).ready(function(e) {
   });
 
   // add product
+  /** 
+   *  
+   * FormData no work
+   *  
+   * 
   $('#product-form').on('submit', function(e) {
     e.preventDefault();
     const url = edit === false ? 'product-add.php' : 'product-edit.php';
@@ -70,8 +75,8 @@ $(document).ready(function(e) {
       }
     });
   });
+  */
 
-  /*
   $('#product-form').submit(e => {
     e.preventDefault();
     const postData = {
@@ -89,7 +94,6 @@ $(document).ready(function(e) {
       fetchproducts();  
     });
   });
-  */
 
   // Fetching products
   function fetchproducts() {

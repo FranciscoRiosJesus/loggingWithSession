@@ -17,7 +17,7 @@
                 </form>
             </li>
             <li class="nav-item  itemSignOut">
-                <a class="nav-link form-inline link" href="sign-out.php"><?php echo $_SESSION['user'] ?>  <button class="btn-sign-out btn btn-success my-2 my-sm-0 search-btn" type="submit" style="text-decoration: underline #1a1a1a">Sign Out</button></a>
+                <a class="nav-link form-inline link" href="sign-out.php"><button class="btn-sign-out btn btn-info" type="submit" style="text-decoration: underline #1a1a1a"> <?php echo $_SESSION['user'] ?>  Sign Out</button></a>
             </li>
         </ul>
     </div>

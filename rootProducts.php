@@ -10,10 +10,16 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <form class="form-inline my-2 my-lg-0">
-        <input name="search" id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-success my-2 my-sm-0 search-btn" type="submit">Search</button>
-      </form>
+      <li class="nav-item active">
+        <form class="form-inline my-2 my-lg-0">
+          <input name="search" id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success my-2 my-sm-0 search-btn" type="submit">Search</button>
+        </form>
+      </li>
+      <li class="nav-item  itemSignOut">
+        <a class="nav-link form-inline link" href="sign-out.php"><button class="btn-sign-out btn btn-info" type="submit" style="text-decoration: underline #1a1a1a"> root Sign Out</button></a>
+      </li>
+    </ul>
   </div>
 </nav>
 
@@ -57,7 +63,7 @@
               <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Product Description"></textarea>
             </div>
             <input type="hidden" id="product_id">
-            <input type="submit" name="submit" class="btn btn-primary btn-block text-center" value="SAVE PRODUCT"/>
+            <input type="submit" name="submit" class="btn btn-form btn-primary btn-block text-center" value="SAVE PRODUCT" />
           </form>
 
         </div>
@@ -82,6 +88,7 @@
               <td>Category</td>
               <td>Description</td>
               <td>Price</td>
+              <td>Delete</td>
             </tr>
           </thead>
           <tbody id="products"></tbody>
