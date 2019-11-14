@@ -26,7 +26,7 @@
 <!-- container -->
 <div class="container">
   <div class="row p-4">
-    <div class="col-md-5">
+    <div class="col-md-3">
       <div class="card">
         <div class="card-body">
 
@@ -51,12 +51,7 @@
             </div>
 
             <div class="form-group">
-              <div class="input-group">
-                <div class="custom-file">
-                  <input type="file" name="img" class="custom-file-input" id="img" accept="image/*">
-                  <label class="custom-file-label" for="img">Choose img</label>
-                </div>
-              </div>
+              <input type="text" id="img-url" placeholder="Img URL" class="form-control" >
             </div>
 
             <div class="form-group">
@@ -71,7 +66,7 @@
     </div>
 
     <!-- TABLE  -->
-    <div class="col-md-7">
+    <div class="col-md-9">
       <div class="card my-4" id="product-result">
         <div class="card-body">
           <!-- SEARCH -->
@@ -88,6 +83,7 @@
               <td>Category</td>
               <td>Description</td>
               <td>Price</td>
+              <td>img-url</td>
               <td>Delete</td>
             </tr>
           </thead>

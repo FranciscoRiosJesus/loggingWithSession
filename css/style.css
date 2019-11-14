@@ -63,6 +63,9 @@ body {
     width: 100% !important;
 }
 
+/* card */
+
+
 @media (min-width: 768px) {
     .container {
         padding-left: 0 !important;
@@ -71,5 +74,12 @@ body {
 
     .row {
         min-width: 1100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .row {
+        min-width: 100%;
+        max-width: 100%;
     }
 }

@@ -84,7 +84,8 @@ $(document).ready(function(e) {
       description: $('#description').val(),
       product_id: $('#product_id').val(),
       category: $('#category').val(),
-      price: $('#price').val()
+      price: $('#price').val(),
+      img_url: $('#img-url').val()
     };
     const url = edit === false ? 'product-add.php' : 'product-edit.php';
     console.log(postData, url);
@@ -116,6 +117,7 @@ $(document).ready(function(e) {
                     <td>${product.category_id}</td>
                     <td>${product.description}</td>
                     <td>$${product.price}</td>
+                    <td>${product.img_url}</td>
                     <td>
                       <button class="product-delete btn btn-danger">
                         Delete 
