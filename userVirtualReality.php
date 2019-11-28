@@ -4,7 +4,7 @@
 
 <!-- NAVIGATION  -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.php">VR AR </a>
+    <a class="navbar-brand" href="index.php">VR AR - Virtual Reality</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,7 +17,7 @@
                 </form>
             </li>
             <li class="nav-item  itemSignOut">
-                <a class="nav-link form-inline link" href="sign-out.php"><button class="btn-sign-out btn btn-info" type="submit" style="text-decoration: underline #1a1a1a"> <?php echo $_SESSION['user'] ?>  Sign Out</button></a>
+                <a class="nav-link form-inline link" href="sign-out.php"><button class="btn-sign-out btn btn-info" type="submit" style="text-decoration: underline #1a1a1a"> <?php echo $_SESSION['user'] ?> Sign Out</button></a>
             </li>
         </ul>
     </div>
@@ -43,8 +43,8 @@
 
             <div class="card my-4" id="product-result">
                 <div class="card-body">
-                <!-- SEARCH -->
-                <ul id="container"></ul>
+                    <!-- SEARCH -->
+                    <ul id="container"></ul>
                 </div>
             </div>
 
@@ -85,7 +85,7 @@
                 </a>
             </div>
 
-            <div class="row" id="products">
+            <div class="row" id="productsVR">
 
             </div>
             <!-- /.row -->
@@ -107,4 +107,15 @@
     <!-- /.container -->
 </footer>
 
-<?php include("includes/footerUserProducts.php") ?>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- 
+        Frontend Logic <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/userProductsVR.js"></script>
+</body>
+
+</html>

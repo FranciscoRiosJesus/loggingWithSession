@@ -77,6 +77,7 @@ $(document).ready(function(e) {
   });
   */
 
+  // Add product
   $('#product-form').submit(e => {
     e.preventDefault();
     const postData = {
@@ -85,8 +86,9 @@ $(document).ready(function(e) {
       product_id: $('#product_id').val(),
       category: $('#category').val(),
       price: $('#price').val(),
-      img_url: $('#img-url').val()
+      img_url: $('#img_url').val()
     };
+    console.log(img_url);
     const url = edit === false ? 'product-add.php' : 'product-edit.php';
     console.log(postData, url);
     $.post(url, postData, (response) => {
@@ -144,6 +146,7 @@ $(document).ready(function(e) {
       $('#product_id').val(product.product_id);
       $('#price').val(product.price);
       $('#category').val(product.category_id);
+      $('#img_url').val(product.img_url);
       edit = true;
     });
     e.preventDefault();

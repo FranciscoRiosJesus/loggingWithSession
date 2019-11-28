@@ -51,7 +51,7 @@
             </div>
 
             <div class="form-group">
-              <input type="text" id="img-url" placeholder="Img URL" class="form-control" >
+              <input type="text" id="img_url" placeholder="Img URL" class="form-control" >
             </div>
 
             <div class="form-group">

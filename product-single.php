@@ -20,7 +20,8 @@ if (isset($_POST['product_id'])) {
       'description' => $row['description'],
       'product_id' => $row['product_id'],
       'price' => $row['price'],
-      'category_id' => $row['category_id']
+      'category_id' => $row['category_id'],
+      'img_url' => $row['img_url']
     );
   }
   $jsonstring = safe_json_encode($json[0]);
